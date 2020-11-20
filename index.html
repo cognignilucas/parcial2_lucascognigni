@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Landing Page - Burro Turismo</title>
+	<link href="css/estilo.css" rel="stylesheet" type="text/css" media="screen and (min-width:960px)" />
+	<link href="css/movil1.css" rel="stylesheet" type="text/css" media="handheld, screen and (min-width:480px) and (max-width:959px)"/>
+	<link href="css/movil2.css" rel="stylesheet" type="text/css" media="handheld, screen and (max-width:479px)"/>
+	<link rel="stylesheet" type="text/css" href="css/responsiveslides.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="js/responsiveslides.js"></script>
+
+  <script>
+
+    $(function () {
+
+      $(".rslides").responsiveSlides({
+        maxwidth: 800,
+        speed: 500,
+        timeout: 2000
+      });
+      });
+  </script>
+
+</head>
+
+<body>
+
+<main>
+
+<div class="grid-container">
+  <div class="Header">
+		<h1 id="titular"> OFERTAS EN HOTELES CON PRECIOS INCREÍBLES </h1><br>
+  </div>
+  <div class="Izquierda">
+	  	<div class="logo"> 
+			<a href="web/Index.html" target="blank_">
+				<img src="img/logo_burro.png" class="animacion1">
+			</a>
+	  	</div>
+	  	<div class="galeria">
+	  		<ul class="rslides">
+  				 <li><img src="img/1.jpg" alt=""></li>
+ 				 <li><img src="img/2.jpg" alt=""></li>
+ 				 <li><img src="img/3.jpg" alt=""></li>
+ 				 <li><img src="img/4.jpg" alt=""></li>
+			</ul>
+			<script>
+  				$(function() { $(".rslides").responsiveSlides(); });
+			</script>
+	  	</div>
+
+  </div>
+
+  <div class="Derecha">
+
+  	<div id="cont_texto">
+      <h1>Dejanos tu información y te contactamos</h1><br>
+      <form id="form" action="enviar.php" method="post">
+       
+        <label for="nombre">Nombre<br /><input type="text" name="nombre" id="nombre" required autofocus/>
+        </label>
+          <br>
+          <label for="apellido">Apellido<br><input type="text" name="apellido" id="apellido" />
+          </label>
+          <br />
+          <label for="email">Correo electrónico<br /><input type="email" name="email" id="email" required />
+          </label>
+          <br />
+          <label>Teléfono</label> <br>
+          <input type="tel"><br>
+          <br>
+          <input name="Submit" type="submit" value="Enviar">
+  	  </form>
+
+</div>
+  </div>
+
+  <div class="Bajo">
+  	<h2> Contamos con mas de 15 años trabajando en el pais y certificados de calidad turística
+  		<br>
+  	Encontrá los mejores paquetes a grandes precios para viajar por todo el país.
+    </h2>
+  </div>
+
+</div>
+
+</main>
+
+<div class="footer"> 
+	<a href="indexmicrositio.html">
+		<h3>
+			LUCAS COGNIGNI
+		</h3>
+	</a>
+</div>
+
+</body>
+
+</html>
+
